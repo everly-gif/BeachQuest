@@ -290,6 +290,14 @@ section:nth-child(2) ul li {
 
 @media screen and (max-width:768px) {
 
+  .fish-container {
+    right:5%;
+  }
+
+  .menu{
+    left:5%;
+  }
+
   .fish-container .welcome-msg {
     display: block;
     animation-play-state: paused;
