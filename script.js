@@ -88,7 +88,6 @@ window.onload = () => {
 
   })
 
-  document.getElementsByTagName("section")[0].classList.add("section-1");
 
   let menu = document.createElement("div");
   menu.classList.add("menu");
