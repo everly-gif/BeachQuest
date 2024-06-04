@@ -10,7 +10,7 @@ window.onload = () => {
   videoBanner.setAttribute("loop", "");
   videoBanner.muted = "muted";
   let videoBannerSrc = document.createElement("source");
-  videoBannerSrc.src = "./assets/1739010-hd_1920_1080_30fps.mp4";
+  videoBannerSrc.src = "./assets/videos/1739010-hd_1920_1080_30fps.mp4";
   videoBannerSrc.type = "video/mp4";
   videoBanner.appendChild(videoBannerSrc);
   videoContainer.appendChild(videoBanner, videoContainer);
@@ -125,7 +125,7 @@ window.onload = () => {
 
   beaches[beaches.length - 1].lastElementChild.lastElementChild.setAttribute("btn-index", 0);
 
-  let beachVideosArray = ["./assets/1739010-hd_1920_1080_30fps.mp4", "./assets/3571264-uhd_3840_2160_30fps.mp4", "./assets/whitehaven.mp4", "./assets/gracebay.mp4", "./assets/baia.mp4", "./assets/shipwreckbeach.mp4", "./assets/playaparaiso.mp4", "./assets/granitebeach.mp4", "./assets/1739010-hd_1920_1080_30fps.mp4", "./assets/borabora.mp4", "./assets/lanikai.mp4", "./assets/pinksand.mp4"]
+  let beachVideosArray = ["./assets/videos/1739010-hd_1920_1080_30fps.mp4", "./assets/videos/3571264-uhd_3840_2160_30fps.mp4", "./assets/videos/whitehaven.mp4", "./assets/videos/gracebay.mp4", "./assets/videos/baia.mp4", "./assets/videos/shipwreckbeach.mp4", "./assets/videos/playaparaiso.mp4", "./assets/videos/granitebeach.mp4", "./assets/videos/1739010-hd_1920_1080_30fps.mp4", "./assets/videos/borabora.mp4", "./assets/videos/lanikai.mp4", "./assets/videos/pinksand.mp4"]
 
   let speechArray = ["Hi, I'm Finley, Me and my friends will be assiting you today to the best of the beaches to share our insights! Click on know more to start the tour!", "Let's Begin, Shall we?", "Visit Whitehaven Beach early morning or late afternoon to avoid crowds and enjoy the most stunning light.", "Pack a picnic and stay for the sunset at Grace Bay Beach for a serene and picturesque end to your day.", "Visit Baia do Sancho during the rainy season (April to June) to witness stunning waterfall cascades directly onto the beach.", "Hike to the viewpoint above Navagio Beach at sunrise for a breathtaking and uncrowded view of the iconic shipwreck and crystal-clear waters.", "Visit Playa Paraiso early in the morning and bring snorkeling gear to explore the vibrant coral reefs just offshore before the crowds arrive.", "Explore Anse Source d'Argent during low tide to discover hidden tide pools and secluded stretches of beach tucked between the granite formations.", "Rent a kayak or paddleboard to explore the calm waters along Seven Mile Beach and discover secluded coves and offshore reefs teeming with marine life.", "Take a sunset cruise around Bora Bora's lagoon for unparalleled views of Mount Otemanu and the island's stunning scenery while enjoying a romantic dinner onboard.", "Experience Lanikai Beach's tranquility by paddling to the nearby Mokulua Islands for secluded beaches and excellent snorkeling.", "To truly appreciate the pink sands of the Bahamas' Pink Beach, visit during sunrise or sunset for a breathtaking display of colors against the azure waters. With this we come to an end ! Thank you for joining us!"]
 
@@ -257,7 +257,7 @@ window.onload = () => {
     document.getElementsByClassName("menu-board")[0].style.display = "none";
     document.querySelector("header").style.display = "none"
     document.getElementsByTagName("section")[0].style.right = "-9%";
-    videoBanner.src = "/assets/3571264-uhd_3840_2160_30fps.mp4";
+    videoBanner.src = "/assets/videos/3571264-uhd_3840_2160_30fps.mp4";
 
 
     videoBanner.load();
