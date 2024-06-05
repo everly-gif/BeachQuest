@@ -95,7 +95,7 @@ window.onload = () => {
   menuIconDiv.classList.add("menu-icon-div");
   let menuIcon = document.createElement("img");
   menuIconDiv.appendChild(menuIcon)
-  menuIcon.src = "/assets/utility/list.png";
+  menuIcon.src = "./assets/utility/list.png";
   menu.appendChild(menuIconDiv)
   let menuBoard = document.createElement("div");
   menuBoard.classList.add("menu-board");
