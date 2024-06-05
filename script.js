@@ -14,20 +14,14 @@ window.onload = () => {
   videoBannerSrc.type = "video/mp4";
   videoBanner.appendChild(videoBannerSrc);
   videoContainer.appendChild(videoBanner, videoContainer);
-  videoBanner.setAttribute("poster","./assets/banner.png");
+  videoBanner.setAttribute("poster","./assets/utility/loader.gif");
   videoBanner.load();
   let overlay = document.createElement("div");
   overlay.classList.add("video-overlay")
   videoContainer.appendChild(overlay);
   videoBanner.play();
   
-  videoBanner.onloadstart = function(){
-    document.getElementsByClassName('video-overlay')[0].style.display = 'none';
-  }
 
-  videoBanner.oncanplay = function () {
-    document.getElementsByClassName('video-overlay')[0].style.display = 'block';
-  }
 
   let prevNextDiv = document.createElement("div")
   prevNextDiv.classList.add("prev-next-container")
@@ -265,7 +259,7 @@ window.onload = () => {
     document.getElementsByClassName("menu-board")[0].style.display = "none";
     document.querySelector("header").style.display = "none"
     document.getElementsByTagName("section")[0].style.right = "-9%";
-    videoBanner.setAttribute("poster","./assets/banner.png");
+    videoBanner.setAttribute("poster","./assets/utility/loader.gif");
     videoBanner.src = "./assets/videos/3571264-uhd_3840_2160_30fps.mp4";
     videoBanner.load();
     videoBanner.play();
