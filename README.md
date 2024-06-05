@@ -1,1 +1,1 @@
-# BeachQuest with Finley
+# BeachQuest with Finley and Friends !
