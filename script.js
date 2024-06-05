@@ -258,7 +258,7 @@ window.onload = () => {
     document.getElementsByClassName("menu-board")[0].style.display = "none";
     document.querySelector("header").style.display = "none"
     document.getElementsByTagName("section")[0].style.right = "-9%";
-    videoBanner.src = "/assets/videos/3571264-uhd_3840_2160_30fps.mp4";
+    videoBanner.src = "./assets/videos/3571264-uhd_3840_2160_30fps.mp4";
 
 
     videoBanner.load();
