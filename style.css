@@ -9,6 +9,10 @@
 
 }
 
+#video-banner[poster]{
+  object-fit: cover;
+}
+
 body {
   padding: 0;
   margin: 0;
