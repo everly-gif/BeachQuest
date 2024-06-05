@@ -8,6 +8,7 @@ window.onload = () => {
   let videoBanner = document.createElement("video");
   videoBanner.setAttribute("id", "video-banner");
   videoBanner.setAttribute("loop", "");
+  videoBanner.setAttribute("poster","https://lottie.host/embed/3488bcca-980e-4671-86b0-7baf7ace2293/CPHtruJCuc.lottie");
   videoBanner.muted = "muted";
   let videoBannerSrc = document.createElement("source");
   videoBannerSrc.src = "./assets/videos/1739010-hd_1920_1080_30fps.mp4";
