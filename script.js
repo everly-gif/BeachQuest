@@ -8,13 +8,13 @@ window.onload = () => {
   let videoBanner = document.createElement("video");
   videoBanner.setAttribute("id", "video-banner");
   videoBanner.setAttribute("loop", "");
-  videoBanner.setAttribute("poster","https://lottie.host/embed/3488bcca-980e-4671-86b0-7baf7ace2293/CPHtruJCuc.lottie");
   videoBanner.muted = "muted";
   let videoBannerSrc = document.createElement("source");
   videoBannerSrc.src = "./assets/videos/1739010-hd_1920_1080_30fps.mp4";
   videoBannerSrc.type = "video/mp4";
   videoBanner.appendChild(videoBannerSrc);
   videoContainer.appendChild(videoBanner, videoContainer);
+  videoBanner.setAttribute("poster","https://lottie.host/embed/3488bcca-980e-4671-86b0-7baf7ace2293/CPHtruJCuc.lottie");
   videoBanner.load();
   let overlay = document.createElement("div");
   overlay.classList.add("video-overlay")
@@ -258,9 +258,8 @@ window.onload = () => {
     document.getElementsByClassName("menu-board")[0].style.display = "none";
     document.querySelector("header").style.display = "none"
     document.getElementsByTagName("section")[0].style.right = "-9%";
+    videoBanner.setAttribute("poster","https://lottie.host/embed/3488bcca-980e-4671-86b0-7baf7ace2293/CPHtruJCuc.lottie");
     videoBanner.src = "./assets/videos/3571264-uhd_3840_2160_30fps.mp4";
-
-
     videoBanner.load();
     videoBanner.play();
 
