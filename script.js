@@ -20,7 +20,14 @@ window.onload = () => {
   overlay.classList.add("video-overlay")
   videoContainer.appendChild(overlay);
   videoBanner.play();
+  
+  videoBanner.onloadstart = function(){
+    document.getElementsByClassName('video-overlay')[0].style.display = 'none';
+  }
 
+  videoBanner.oncanplay = function () {
+    document.getElementsByClassName('video-overlay')[0].style.display = 'block';
+  }
 
   let prevNextDiv = document.createElement("div")
   prevNextDiv.classList.add("prev-next-container")
