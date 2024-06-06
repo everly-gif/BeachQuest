@@ -34,7 +34,7 @@ window.onload = () => {
     loadingTimeout = setTimeout(() => {
       document.getElementsByClassName('video-overlay')[0].style.display = 'none';
       document.getElementsByClassName('loader-div')[0].style.display = 'flex';
-  }, 2000); // 2000 milliseconds = 2 seconds
+  }, 1000); // 2000 milliseconds = 2 seconds
   }
 
   videoBanner.oncanplay = function () {
