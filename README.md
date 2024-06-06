@@ -1,5 +1,5 @@
 # 🌊 Beach Quest with Finley and Friends !
-<img src="./assets/banner.png">
+<img src="./assets/banner.png"><br>
 _This is a submission for [Frontend Challenge v24.04.17]((https://dev.to/challenges/frontend-2024-05-29), Glam Up My Markup: Beaches_
 
 ## What I Built
