@@ -9,7 +9,7 @@ window.onload = () => {
   videoBanner.setAttribute("id", "video-banner");
   videoBanner.setAttribute("loop", "");
   videoBanner.setAttribute("autoplay", "");
-  videoBanner.setAttribute("preload","auto")
+  videoBanner.setAttribute("preload", "auto")
   videoBanner.muted = "muted";
   let videoBannerSrc = document.createElement("source");
   videoBannerSrc.src = "./assets/videos/1739010-hd_1920_1080_30fps.mp4";
@@ -24,24 +24,25 @@ window.onload = () => {
 
   let loaderDiv = document.createElement("div");
   let loader = document.createElement("img");
-  loader.src="./assets/utility/loader.gif";
+  loader.src = "./assets/utility/loader.gif";
   loader.classList.add("loader");
   loaderDiv.classList.add("loader-div");
   loaderDiv.appendChild(loader)
   document.body.appendChild(loaderDiv);
-  
-  videoBanner.onloadstart = function(){
-    loadingTimeout = setTimeout(() => {
-      document.getElementsByClassName('video-overlay')[0].style.display = 'none';
-      document.getElementsByClassName('loader-div')[0].style.display = 'flex';
-  }, 500); // 2000 milliseconds = 2 seconds
+
+  videoBanner.onloadstart = function () {
+
+    document.getElementsByClassName('video-overlay')[0].style.display = 'block';
+    document.getElementsByClassName('loader-div')[0].style.display = 'flex';
+
   }
 
-  videoBanner.oncanplay = function () {
-    clearTimeout(loadingTimeout); // Clear the timeout if the video can play before 2 seconds
+  videoBanner.oncanplaythrough = function () {
+
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
     document.getElementsByClassName('loader-div')[0].style.display = 'none';
- 
+
+
   }
 
 
@@ -281,7 +282,7 @@ window.onload = () => {
     document.getElementsByClassName("menu-board")[0].style.display = "none";
     document.querySelector("header").style.display = "none"
     document.getElementsByTagName("section")[0].style.right = "-9%";
-   
+
     videoBanner.src = "./assets/videos/3571264-uhd_3840_2160_30fps.mp4";
     videoBanner.load();
     videoBanner.play();
