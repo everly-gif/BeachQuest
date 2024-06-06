@@ -95,7 +95,7 @@ window.onload = () => {
   }
 
   document.getElementsByTagName("section")[0].setAttribute("data-index", 1);
-  document.querySelectorAll("section .prevBtn")[0].setAttribute("btn-index", 0);
+  document.querySelectorAll("section prev-btn")[0].setAttribute("btn-index", 0);
 
 
   // tour guide container, set initial value
@@ -203,7 +203,7 @@ window.onload = () => {
   
   // next button functionality
 
-  let nextBtns = document.getElementsByClassName('nextBtn');
+  let nextBtns = document.getElementsByClassName('next-btn');
   for (let i = 0; i < nextBtns.length; i++) {
 
     nextBtns[i].addEventListener("click", (e) => {
@@ -239,7 +239,7 @@ window.onload = () => {
 
   //prev button functionality
 
-  let prevBtns = document.getElementsByClassName('prevBtn');
+  let prevBtns = document.getElementsByClassName('prev-btn');
 
   for (let i = 0; i < prevBtns.length; i++) {
 
