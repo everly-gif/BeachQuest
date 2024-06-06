@@ -95,7 +95,7 @@ window.onload = () => {
   }
 
   document.getElementsByTagName("section")[0].setAttribute("data-index", 1);
-  document.querySelectorAll("section prev-btn")[0].setAttribute("btn-index", 0);
+  document.querySelectorAll("section .prev-btn")[0].setAttribute("btn-index", 0);
 
 
   // tour guide container, set initial value
