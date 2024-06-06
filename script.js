@@ -34,14 +34,13 @@ window.onload = () => {
 
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
     document.getElementsByClassName('loader-div')[0].style.display = 'flex';
-    document.getElementsByClassName('loader-div')[0].style.visibility = 'visible';
+
   }
 
   videoBanner.oncanplaythrough = function () {
 
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
-    document.getElementsByClassName('loader-div')[0].style.visibility = 'hidden';
-    document.getElementsByClassName('loader-div')[0].style.transition = "1s ease";
+    document.getElementsByClassName('loader-div')[0].style.display = 'none';
 
 
 
