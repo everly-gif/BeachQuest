@@ -11,6 +11,8 @@
 
 #video-banner[poster]{
   object-fit: cover;
+  height:100vw;
+  width:100%;
 }
 
 body {
