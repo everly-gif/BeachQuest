@@ -40,7 +40,9 @@ window.onload = () => {
   videoBanner.oncanplaythrough = function () {
 
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
-    document.getElementsByClassName('loader-div')[0].style.display = 'none';
+    document.getElementsByClassName('loader-div')[0].style.visibility = 'hidden';
+    document.getElementsByClassName('loader-div')[0].style.transition = "1s ease";
+
 
 
   }
