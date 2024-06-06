@@ -34,7 +34,7 @@ window.onload = () => {
 
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
     document.getElementsByClassName('loader-div')[0].style.display = 'flex';
-
+    document.getElementsByClassName('loader-div')[0].style.visibility = 'visible';
   }
 
   videoBanner.oncanplaythrough = function () {
