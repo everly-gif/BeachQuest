@@ -35,7 +35,6 @@ _Note: you'll only be able to see the loader if there is a delay in loading the 
 
 I have deployed the website on **GitHub Pages** : https://everly-gif.github.io/BeachQuest/
 
-**Source Code** : https://github.com/everly-gif/BeachQuest
 
 ## Journey
 Building this wasn't as simple as I initially thought it would be. I faced numerous challenges throughout the process, especially since the rules strictly prohibited altering the markup directly. As a result, every interaction—from the tour guides and navigation bar to the buttons, loader, video element, video overlay and progress bar had to be added using pure JavaScript. Here below I write an overview of my journey.
