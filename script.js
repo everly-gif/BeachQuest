@@ -156,6 +156,10 @@ window.onload = () => {
       document.getElementsByClassName("menu-board")[0].style.display = "block";
   })
 
+  document.getElementsByClassName("video-overlay")[0].onclick = () => {
+    document.getElementsByClassName("menu-board")[0].style.display = "none";
+  }
+  
   beaches[beaches.length - 1].lastElementChild.lastElementChild.setAttribute("btn-index", 0);
 
   let beachVideosArray = ["./assets/videos/1739010-hd_1920_1080_30fps.mp4", "./assets/videos/3571264-uhd_3840_2160_30fps.mp4", "./assets/videos/whitehaven.mp4", "./assets/videos/gracebay.mp4", "./assets/videos/baia.mp4", "./assets/videos/shipwreckbeach.mp4", "./assets/videos/playaparaiso.mp4", "./assets/videos/granitebeach.mp4", "./assets/videos/1739010-hd_1920_1080_30fps.mp4", "./assets/videos/borabora.mp4", "./assets/videos/lanikai.mp4", "./assets/videos/pinksand.mp4"]
@@ -200,7 +204,7 @@ window.onload = () => {
       }
     })
   }
-  
+
   // next button functionality
 
   let nextBtns = document.getElementsByClassName('next-btn');
