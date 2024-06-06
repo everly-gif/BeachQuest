@@ -6,13 +6,10 @@
   left: 0;
   width: 100%;
   transition: 1s ease-in;
+  background-color: white;
 
 }
 
-#video-banner[poster]{
-  height:100%;
-  width:100%;
-}
 
 body {
   padding: 0;
