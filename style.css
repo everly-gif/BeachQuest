@@ -10,24 +10,24 @@
 
 }
 
-.loader-div{
- background-color: #FEFFD2;
- width:100%;
- height:100%;
- z-index:7;
- position: absolute;
-justify-content: center;
-align-items: center;
-object-fit: fill;
-display: none;
-transition: 1s ease;
+.loader-div {
+  background-color: #FEFFD2;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
+  display: none;
+  transition: 1s ease;
 }
 
-.loader{
+.loader {
   position: absolute;
   bottom: 50%;
-  width:100px;
-  height:100px;
+  width: 100px;
+  height: 100px;
 }
 
 body {
@@ -203,8 +203,8 @@ section:nth-child(1) {
 
 }
 
-.prevBtn,
-.nextBtn {
+.prev-btn,
+.next-btn {
   background-color: transparent;
   color: white;
   outline: none;
@@ -244,6 +244,8 @@ section:nth-child(2) ul li {
   width: 100%;
   height: 4px;
 }
+
+/* menu */
 
 .menu {
   position: absolute;
@@ -292,6 +294,8 @@ section:nth-child(2) ul li {
   border-bottom: 1px solid #ccc;
 }
 
+/* media queries */
+
 @media screen and (max-width:1280px) {
 
   #video-banner {
@@ -312,15 +316,15 @@ section:nth-child(2) ul li {
 @media screen and (max-width:768px) {
 
   .fish-container {
-    right:5%;
+    right: 5%;
   }
 
-  header{
+  header {
     transform: translate(-50%, -80%);
   }
 
-  .menu{
-    left:5%;
+  .menu {
+    left: 5%;
   }
 
   .fish-container .welcome-msg {

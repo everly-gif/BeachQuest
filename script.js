@@ -1,6 +1,6 @@
 window.onload = () => {
 
-
+  // create video element and set first video
   let videoContainer = document.createElement("div");
   videoContainer.classList.add("video-container");
   document.body.insertBefore(videoContainer, document.body.childNodes[0]);
@@ -22,6 +22,7 @@ window.onload = () => {
   videoContainer.appendChild(overlay);
   videoBanner.play();
 
+  // create loader
   let loaderDiv = document.createElement("div");
   let loader = document.createElement("img");
   loader.src = "./assets/utility/loader.gif";
@@ -29,6 +30,8 @@ window.onload = () => {
   loaderDiv.classList.add("loader-div");
   loaderDiv.appendChild(loader)
   document.body.appendChild(loaderDiv);
+
+  // toggle loader based on video availability
 
   videoBanner.onloadstart = function () {
 
@@ -42,23 +45,22 @@ window.onload = () => {
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
     document.getElementsByClassName('loader-div')[0].style.display = 'none';
 
-
-
   }
 
+  // create prev and next buttons with bar
 
   let prevNextDiv = document.createElement("div")
   prevNextDiv.classList.add("prev-next-container")
   let prevBtn = document.createElement("button");
   prevBtn.innerText = "PREV";
 
-  prevBtn.classList.add("prevBtn")
+  prevBtn.classList.add("prev-btn")
   let hr = document.createElement("div")
   hr.classList.add("hr")
   let range = (1 / 11) * 100;
   hr.style.background = `linear-gradient(to right, #fff 0%, #fff ${range}%, #848484 ${range}%, #848484 100%)`;
   let nextBtn = document.createElement("button");
-  nextBtn.classList.add("nextBtn")
+  nextBtn.classList.add("next-btn")
   nextBtn.innerText = "NEXT";
   nextBtn.setAttribute("btn-index", 2)
   prevNextDiv.appendChild(prevBtn);
@@ -72,14 +74,14 @@ window.onload = () => {
     prevNextDiv.classList.add("prev-next-container")
     let prevBtn = document.createElement("button");
     prevBtn.innerText = "PREV";
-    prevBtn.classList.add("prevBtn")
+    prevBtn.classList.add("prev-btn")
     prevBtn.setAttribute("btn-index", i + 1);
     let hr = document.createElement("div")
     hr.classList.add("hr")
     let range = ((i + 2) / 11) * 100;
     hr.style.background = `linear-gradient(to right, #fff 0%, #fff ${range}%, #848484 ${range}%, #848484 100%)`;
     let nextBtn = document.createElement("button");
-    nextBtn.classList.add("nextBtn")
+    nextBtn.classList.add("next-btn")
     nextBtn.setAttribute("btn-index", i + 3);
     nextBtn.innerText = "NEXT";
     beaches[i].setAttribute("data-index", i + 2);
@@ -94,6 +96,9 @@ window.onload = () => {
 
   document.getElementsByTagName("section")[0].setAttribute("data-index", 1);
   document.querySelectorAll("section .prevBtn")[0].setAttribute("btn-index", 0);
+
+
+  // tour guide container, set initial value
 
   let fishContainer = document.createElement("div");
   fishContainer.classList.add("fish-container")
@@ -114,6 +119,8 @@ window.onload = () => {
 
   })
 
+
+  // create menu for accessibility and set value
 
   let menu = document.createElement("div");
   menu.classList.add("menu");
@@ -158,6 +165,8 @@ window.onload = () => {
   let characterArray = ["./assets/tourguides/finley.png", "./assets/tourguides/finley.png", "./assets/tourguides/dory.png", "./assets/tourguides/blackfish.png", "./assets/tourguides/greenfish.png", "./assets/tourguides/dory.png", "./assets/tourguides/purplefish.png", "./assets/tourguides/eel.png", "./assets/tourguides/finley.png", "./assets/tourguides/greenfish.png", "./assets/tourguides/eel.png", "./assets/tourguides/greenfish.png"
   ]
 
+  // toggle logic based on onclick event
+
   let menuSlides = document.querySelectorAll("[data-slide]");
   for (let i = 0; i < menuSlides.length; i++) {
     menuSlides[i].addEventListener('click', (e) => {
@@ -191,7 +200,8 @@ window.onload = () => {
       }
     })
   }
-
+  
+  // next button functionality
 
   let nextBtns = document.getElementsByClassName('nextBtn');
   for (let i = 0; i < nextBtns.length; i++) {
@@ -226,6 +236,8 @@ window.onload = () => {
 
 
   };
+
+  //prev button functionality
 
   let prevBtns = document.getElementsByClassName('prevBtn');
 
@@ -263,7 +275,7 @@ window.onload = () => {
 
 
 
-
+  // create cta for first view
 
   let cta = document.createElement("button");
   cta.innerText = "Know More";
@@ -277,6 +289,8 @@ window.onload = () => {
 
 
   })
+
+  // cta onclick event
 
   cta.addEventListener("click", () => {
     console.log("clicked");
