@@ -32,7 +32,7 @@ window.onload = () => {
   
   videoBanner.onloadstart = function(){
     document.getElementsByClassName('video-overlay')[0].style.display = 'none';
-    document.getElementsByClassName('loader-div')[0].style.display = 'block';
+    document.getElementsByClassName('loader-div')[0].style.display = 'flex';
   }
 
   videoBanner.oncanplay = function () {
