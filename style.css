@@ -25,7 +25,9 @@ transition: 1s ease;
 
 .loader{
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
+  width:100px;
+  height:100px;
 }
 
 body {
