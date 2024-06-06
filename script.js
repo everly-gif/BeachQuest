@@ -31,11 +31,14 @@ window.onload = () => {
   document.body.appendChild(loaderDiv);
   
   videoBanner.onloadstart = function(){
-    document.getElementsByClassName('video-overlay')[0].style.display = 'none';
-    document.getElementsByClassName('loader-div')[0].style.display = 'flex'
+    loadingTimeout = setTimeout(() => {
+      document.getElementsByClassName('video-overlay')[0].style.display = 'none';
+      document.getElementsByClassName('loader-div')[0].style.display = 'flex';
+  }, 1000); // 2000 milliseconds = 2 seconds
   }
 
   videoBanner.oncanplay = function () {
+    clearTimeout(loadingTimeout); // Clear the timeout if the video can play before 2 seconds
     document.getElementsByClassName('video-overlay')[0].style.display = 'block';
     document.getElementsByClassName('loader-div')[0].style.display = 'none';
  
